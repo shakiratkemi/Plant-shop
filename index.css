@@ -542,3 +542,127 @@ body {
   color: #3a9842;
   font-size: 80px;
 }
+
+/* Newsletter Styling */
+.newsletter-container {
+  background: url("./images/green-monstera.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Quicksand", sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+.newsletter-container h2 {
+  text-transform: capitalize;
+  font-size: 65px;
+  padding: 150px 0px 0px 80px;
+  font-family: "Raleway", sans-serif;
+}
+
+.newsletter-container p {
+  color: #ffffffcc;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+
+.newsletter-mail {
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  padding: 10px;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  width: 600px;
+  font-family: "Raleway", sans-serif;
+}
+
+.newsletter-mail input {
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+.newsletter-mail button {
+  color: #fff;
+  background-color: #3a9842;
+  border: 1px solid #3a9842;
+  border-radius: 50px;
+  font-family: "Raleway", sans-serif;
+  padding: 12px;
+  width: 110px;
+  font-size: 15px;
+}
+
+.newsletter-mail button:hover {
+  background-color: #000;
+}
+
+/* Footer styling */
+.footer-container {
+  background-color: #000;
+  font-family: "Quicksand", sans-serif;
+  color: #fff;
+  padding: 80px 0px 30px 40px;
+  display: flex;
+  gap: 40px;
+  /* justify-content: space-between; */
+  border-bottom: 1px solid #ababab;
+}
+
+.footer-logo-text {
+  color: #ffffffb3;
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 1.8;
+}
+
+.footer-links-container {
+  color: #ffffffb3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 180px;
+}
+
+.footer-links-header {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+  flex: 1;
+}
+
+.footer-links li a {
+  color: #ffffffb3;
+  text-decoration: none;
+}
+
+.footer-links li a:hover {
+  color: #3a9842;
+}
+
+/* Site-privacy styling */
+.site-privacy {
+  color: #ababab;
+  background-color: #000;
+  font-family: "Quicksand", sans-serif;
+  padding: 20px 30px 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
