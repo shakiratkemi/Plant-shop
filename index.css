@@ -39,7 +39,7 @@ body {
   height: 20px;
 }
 
-.nav-container ul {
+.header-links {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,7 +47,7 @@ body {
   gap: 40px;
 }
 
-.nav-container li a {
+.header-links li a {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
@@ -168,8 +168,7 @@ body {
   align-items: center;
   font-family: "Quicksand", sans-serif;
   gap: 30px;
-  padding-top: 35px;
-  margin-left: 40px;
+  margin: 0px 40px 0px 350px;
 }
 
 .nav-content a {
@@ -192,7 +191,7 @@ body {
 }
 
 .side-content img {
-  margin-top: 50px;
+  margin-top: 100px;
   width: 450px;
   height: 800px;
   padding-left: 50px;
@@ -277,6 +276,10 @@ body {
   font-size: 43px;
 }
 
+.benefit-icon:hover {
+  color: #3a9842;
+}
+
 .benefit-text {
   display: flex;
   flex-direction: column;
@@ -336,7 +339,7 @@ body {
 }
 
 .overlay h1 {
-  font-weight: 350;
+  font-weight: 600;
 }
 
 /* Trending Product styling */
@@ -398,6 +401,7 @@ body {
 .product-text h2 {
   line-height: 1.3;
   margin-bottom: 15px;
+  width: 100px;
 }
 
 .product-text h2 a {
@@ -572,7 +576,21 @@ body {
   text-align: center;
 }
 
-.newsletter-mail {
+.newsletter-mail-container {
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  padding: 15px;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  width: 600px;
+  max-width: 100%;
+  font-family: "Raleway", sans-serif;
+}
+
+/* .newsletter-mail {
   display: flex;
   background-color: #fff;
   border: 1px solid #fff;
@@ -582,8 +600,9 @@ body {
   gap: 20px;
   justify-content: space-between;
   width: 600px;
+  max-width: 100%;
   font-family: "Raleway", sans-serif;
-}
+} */
 
 .newsletter-mail input {
   border: none;
@@ -591,7 +610,7 @@ body {
   font-size: 15px;
 }
 
-.newsletter-mail button {
+.newsletter-mail-container button {
   color: #fff;
   background-color: #3a9842;
   border: 1px solid #3a9842;
@@ -602,7 +621,7 @@ body {
   font-size: 15px;
 }
 
-.newsletter-mail button:hover {
+.newsletter-mail-container button:hover {
   background-color: #000;
 }
 
@@ -614,7 +633,6 @@ body {
   padding: 80px 0px 30px 40px;
   display: flex;
   gap: 40px;
-  /* justify-content: space-between; */
   border-bottom: 1px solid #ababab;
 }
 
@@ -665,4 +683,560 @@ body {
   display: flex;
   justify-content: space-between;
   padding-top: 40px;
+  align-items: center;
+}
+
+.site-links {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+}
+
+.site-links li a {
+  color: #fff;
+}
+
+.site-links li a:hover {
+  color: #3a9842;
+}
+
+/* Responsiveness */
+@media (max-width: 480px) {
+  .app-header {
+    flex-direction: column;
+  }
+
+  .app-header-details {
+    width: 480px;
+    height: 900px;
+  }
+
+  .nav-container {
+    gap: 20px;
+  }
+
+  .nav-content p {
+    display: none;
+  }
+
+  .header-links {
+    display: none;
+  }
+
+  .header-icon {
+    display: block;
+    font-size: 20px;
+  }
+
+  .nav-side-header {
+    margin: 0px 0px 0px 120px;
+    gap: 10px;
+    font-size: 13px;
+  }
+  .nav-content a i {
+    color: #fff;
+  }
+
+  .header-details {
+    justify-content: start;
+    padding: 0;
+    width: 350px;
+    margin-top: 100px;
+  }
+
+  .header-details h1 {
+    font-size: 50px;
+    padding: 0;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+
+  .header-shop {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 30px;
+  }
+
+  .scroll-down {
+    align-items: start;
+    justify-content: start;
+    padding: 0;
+  }
+
+  .header-side-container {
+    align-items: start;
+    justify-content: start;
+  }
+
+  .side-content img {
+    width: 350px;
+    height: 500px;
+    margin-top: 10px;
+  }
+
+  #hoya a {
+    font-size: 20px;
+  }
+  .side-content p {
+    font-size: 13px;
+  }
+
+  .cart-price {
+    font-size: 20px;
+  }
+
+  .benefit-container {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .benefit-details {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .benefit-text {
+    align-items: center;
+  }
+
+  .plant-container {
+    flex-direction: column;
+  }
+
+  .plant-details {
+    width: 320px;
+    height: 350px;
+  }
+
+  .plant-details img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .overlay {
+    width: 150px;
+    height: 200px;
+    left: 90px;
+    top: 80px;
+  }
+
+  .overlay h1 {
+    font-size: 30px;
+  }
+
+  .product-header {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  .product-header button {
+    padding: 10px 20px 10px 20px;
+    font-size: 17px;
+  }
+
+  .product-details-container {
+    flex-direction: column;
+  }
+
+  .plant-accessories {
+    flex-direction: column;
+  }
+
+  .tools-container img {
+    width: 320px;
+    height: 350px;
+  }
+
+  .overlayword {
+    font-size: 32px;
+    line-height: 1.5;
+    width: 250px;
+    height: 200px;
+    left: 40px;
+    top: 80px;
+  }
+
+  .testimonial-header h3 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .testimonial-content-container {
+    flex-direction: column;
+  }
+
+  .testimonial-content {
+    width: 320px;
+    height: 200px;
+    align-items: start;
+    justify-content: center;
+    padding: 20px;
+    font-size: 10px;
+  }
+
+  .testimonial-content-details {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 90px;
+  }
+
+  .testimonial-header-text h4 {
+    font-size: 12px;
+  }
+
+  .testimonial-header-text p {
+    font-size: 10px;
+    line-height: 1.3;
+  }
+
+  .testimonial-icon {
+    font-size: 20px;
+  }
+
+  .newsletter-container {
+    height: 450px;
+    padding: 10px;
+  }
+
+  .newsletter-container h2 {
+    font-size: 33px;
+    padding: 0;
+  }
+
+  .newsletter-container p {
+    font-size: 15px;
+  }
+
+  .newsletter-mail-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .newsletter-mail input {
+    display: block;
+    width: 300px;
+  }
+
+  .newsletter-mail-container button {
+    display: block;
+    width: 300px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-logo {
+    text-align: center;
+  }
+  .footer-links-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .site-privacy {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .app-header {
+    flex-direction: column;
+  }
+
+  .app-header-details {
+    width: 790px;
+    height: 900px;
+  }
+
+  .nav-container {
+    gap: 20px;
+  }
+
+  .header-links {
+    display: none;
+  }
+
+  .header-icon {
+    display: block;
+    font-size: 20px;
+  }
+
+  .nav-side-header {
+    margin: 0px 0px 0px 120px;
+    gap: 10px;
+    font-size: 13px;
+  }
+
+  .nav-content p {
+    color: #fff;
+  }
+
+  .nav-content a i {
+    color: #fff;
+  }
+
+  .header-details {
+    justify-content: start;
+    padding: 0;
+    width: 350px;
+    margin-top: 100px;
+  }
+
+  .header-details h1 {
+    font-size: 50px;
+    padding: 0;
+    line-height: 1.2;
+    font-weight: 400;
+    width: 300px;
+  }
+
+  .header-details p {
+    font-size: 18px;
+    width: 500px;
+  }
+
+  .scroll-down {
+    align-items: start;
+    justify-content: start;
+    padding: 0;
+  }
+
+  .header-side-container {
+    align-items: start;
+    justify-content: start;
+  }
+
+  .side-content {
+    padding: 10px;
+  }
+
+  .side-content img {
+    width: 600px;
+    height: 600px;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  #hoya a {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .side-content p {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  #accessory a,
+  .cart {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .cart-price {
+    font-size: 20px;
+  }
+
+  .benefit-container {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .benefit-details {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .benefit-text {
+    align-items: center;
+  }
+
+  .plant-container {
+    flex-direction: column;
+  }
+
+  .plant-details {
+    width: 520px;
+    height: 350px;
+  }
+
+  .plant-details img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .overlay {
+    width: 150px;
+    height: 200px;
+    left: 170px;
+    top: 80px;
+  }
+
+  .overlay h1 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .product-header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .product-header h1 {
+    text-align: center;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  .product-header button {
+    padding: 10px 20px 10px 20px;
+    font-size: 15px;
+    width: 200px;
+  }
+
+  .product-details-container {
+    flex-direction: column;
+  }
+
+  .product-details img {
+    width: 550px;
+    height: 650px;
+  }
+
+  .plant-accessories {
+    flex-direction: column;
+  }
+
+  .tools-container img {
+    height: 250px;
+  }
+
+  .overlayword {
+    font-size: 30px;
+    width: 400px;
+    height: 100px;
+  }
+
+  .testimonial-header {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .testimonial-header h3 {
+    font-size: 35px;
+  }
+
+  .testimonial-content-container {
+    flex-direction: column;
+  }
+
+  .testimonial-content {
+    width: 500px;
+    height: 200px;
+    align-items: start;
+    justify-content: center;
+    padding: 20px;
+    font-size: 13px;
+    line-height: 1.3;
+  }
+
+  .testimonial-content-details {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 200px;
+  }
+
+  .testimonial-header-text h4 {
+    font-size: 17px;
+  }
+
+  .testimonial-header-text p {
+    font-size: 10px;
+    line-height: 1.3;
+  }
+
+  .testimonial-icon {
+    font-size: 25px;
+  }
+
+  .newsletter-container {
+    height: 450px;
+    padding: 10px;
+  }
+
+  .newsletter-container h2 {
+    font-size: 33px;
+    padding: 0;
+  }
+
+  .newsletter-container p {
+    font-size: 15px;
+  }
+
+  .newsletter-mail-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .newsletter-mail input {
+    display: block;
+    width: 300px;
+  }
+
+  .newsletter-mail-container button {
+    display: block;
+    width: 300px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-logo {
+    text-align: center;
+  }
+  .footer-links-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .site-privacy {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
 }
