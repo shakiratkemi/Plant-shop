@@ -6,4 +6,139 @@
 
 body {
   overflow-x: hidden;
+  font-family: "Quicksand", sans-serif;
+}
+
+.shop-main {
+  background: url("./images/green-monstera.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-weight: bold;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  margin: 0px 40px 40px 40px;
+  width: 100%;
+  height: 250px;
+}
+
+.shop-container {
+  display: flex;
+  gap: 80px;
+  padding: 40px;
+}
+
+.shop-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex: 0 0 230px;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border-top: 1px solid #ccc;
+  padding-top: 40px;
+}
+
+.category-header,
+.size-header,
+.color-header {
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+}
+
+.category-details {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 25px;
+}
+
+.category-details li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.category-details li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+
+#product-check {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #f6f6f6;
+  margin-right: 15px;
+  text-align: center;
+  color: #f6f6f6;
+}
+
+.shop-air {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ccc;
+  padding-top: 30px;
+}
+
+.shop-air h3 a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+}
+
+.size {
+  display: flex;
+  flex-direction: column;
+
+  border-top: 1px solid #ccc;
+  padding-top: 30px;
+}
+
+.size-details {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  margin-top: 20px;
+}
+
+.size-details a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.colors {
+  border-top: 1px solid #ccc;
+  padding-top: 30px;
+}
+
+.colors-details {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  padding-left: 30px;
+  list-style-type: none;
+}
+
+#green {
+  border-radius: 50%;
+  background-color: green;
+  width: 40px;
+  height: 40px;
 }
