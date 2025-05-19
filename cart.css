@@ -40,20 +40,27 @@
   width: 730px;
   height: 200px;
   align-items: center;
+  font-size: 18px;
 }
 
 .bag-details a {
   text-decoration: none;
   color: #000;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 17px;
+}
+
+.bag-details img {
+  object-fit: cover;
+  width: 100px;
 }
 
 #quantity {
   border: 1px solid black;
   width: 70px;
   padding: 10px;
-  font-size: 12px;
+  font-size: 18px;
+  font-weight: 550;
 }
 
 .coupon-container {
@@ -65,13 +72,18 @@
 }
 
 .coupon {
-  background-color: #3a9842;
+  background-color: #f1f1f1;
   padding: 13px;
   width: 350px;
   height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.coupon input {
+  border: none;
+  background-color: transparent;
 }
 
 #apply {
@@ -85,12 +97,12 @@
 }
 
 .coupon-container button {
-  text-transform: uppercase;
-  border: 1px solid #d5ddd0;
+  text-transform: capitalize;
+  border: 1px solid #3a9842;
   padding: 20px;
   font-size: 12px;
-  background-color: transparent;
-  color: #d5ddd0;
+  background-color: #3a9842;
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -131,11 +143,15 @@
 }
 
 .checkout {
-  background-color: #000000;
+  background-color: #3a9842;
   padding: 20px;
   width: 300px;
   margin: 0 auto;
-  border: 1px solid #000000;
+  border: 1px solid #3a9842;
+}
+
+.checkout:hover {
+  background-color: #000;
 }
 
 .checkout a {

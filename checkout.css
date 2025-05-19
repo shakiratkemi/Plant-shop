@@ -94,6 +94,12 @@ label {
   align-items: center;
   border-bottom: 1px solid #ababab;
   font-weight: 650;
+  gap: 20px;
+}
+
+.order-details img {
+  object-fit: cover;
+  width: 80px;
 }
 
 #price {
